@@ -1,37 +1,146 @@
-## Welcome to GitHub Pages
+<!DoCTypE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+.mySketches {display:none;}
 
-You can use the [editor on GitHub](https://github.com/shaneswanson/ame220/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+.center {
+  text-align: center;
+}
+</style>
+</head>
+<head>
+  <title> Shane Swanson Resume </title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <div class="center">
+<h1 style="border: 2px solid Violet;">Portfolio</h1>
+  <hr>
+  <style>
+  .center {
+    text-align: center;
+  }
+    ul {
+      list-style-type: none;
+      margin:0;
+      padding: 0;
+      overflow: hidden:
+      background-color: black;
+    }
+li{
+  float:none;
+}
+    li a, .dropbtn {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover, .dropdown:hover .dropbtn{
+      background-color: lightgray;
+    }
+    li.dropdown{
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: lightgray;
+      min-width: 400px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: violet}
 
-### Markdown
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    </style>
+    </head>
+<body>
+    <img src= "shaneswanson.jpg" alt="shane swanson" width="200px">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<h2> Shane Swanson </h2>
+  <ul>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">contact</a>
+    <div class="dropdown-content">
+      <a href="email">smswans1@asu.edu</a>
+      <a href="tel">480.823.8001</a>
+      <a href=":mailto">323 E Veterans Way</a>
+    </div>
+    </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">education</a>
+    <div class="dropdown-content">
+      <a href="#highschool">Pinnacle High School</a>
+      <a href="#communitycollege">PVCC</a>
+      <a href="#university">ASU</a>
+    </div>
+    </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">experience</a>
+    <div class="dropdown-content">
+      <a href="#hostess">Sizzle Korean BBQ</a>
+      <a href="#server">Pei Wei Asian Diner</a>
+      <a href="#counselor">Rancho Solano Summer Camps</a>
+    </div>
+    </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">references</a>
+    <div class="dropdown-content">
+      <a href="#coworker">Lilli</a>
+      <a href="#manager">Ron</a>
+      <a href="#supervisor">Alexa</a>
+    </div>
+    </li>
+    </ul>
+</body>
 
-```markdown
-Syntax highlighted code block
+<br> <br><br><br><br><br><br>
+<body>
 
-# Header 1
-## Header 2
-### Header 3
+<h2 class="w3-center">sketchbook</h2>
 
-- Bulleted
-- List
+<div class="w3-content w3-display-container">
+  <img class="mySketches" src="art7.jpg" style="width:100%">
+  <img class="mySketches" src="art9.jpg" style="width:100%">
+  <img class="mySketches" src="art10.jpg" style="width:100%">
+  <img class="mySketches" src="art12.jpg" style="width:100%">
+  <img class="mySketches" src="art13.jpg" style="width:100%">
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+</div>
 
-[Link](url) and ![Image](src)
-```
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-### Jekyll Themes
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySketches");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shaneswanson/ame220/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
